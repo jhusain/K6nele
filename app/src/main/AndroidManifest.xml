@@ -124,7 +124,7 @@ Also, failed to set the launchMode from the resource, INSTALL_PARSE_FAILED_UNEXP
             android:label="@string/labelActivityRecognizerIntent"
             android:launchMode="standard"
             android:theme="@style/Theme.K6nele.Dialog">
-            <intent-filter>
+            <!--<intent-filter>
                 <action android:name="android.speech.action.RECOGNIZE_SPEECH" />
 
                 <category android:name="android.intent.category.DEFAULT" />
@@ -135,14 +135,14 @@ Also, failed to set the launchMode from the resource, INSTALL_PARSE_FAILED_UNEXP
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
 
-            <!-- input/output: Nothing -->
-            <!-- Samsung Galaxy SII launches VOICE_COMMAND when HOME is double-clicked -->
+            &lt;!&ndash; input/output: Nothing &ndash;&gt;
+            &lt;!&ndash; Samsung Galaxy SII launches VOICE_COMMAND when HOME is double-clicked &ndash;&gt;
             <intent-filter>
                 <action android:name="android.intent.action.VOICE_COMMAND" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            <!--
+            &lt;!&ndash;
             Action ASSIST (API 16)
             Input: EXTRA_ASSIST_PACKAGE, EXTRA_ASSIST_CONTEXT. Output: nothing.
 
@@ -158,22 +158,22 @@ Also, failed to set the launchMode from the resource, INSTALL_PARSE_FAILED_UNEXP
             specific to Huawei Watch 2 with its weird setup,
             where the upper button launches ASSIST (and this cannot be
             changed) and the lower button can open any app (other than Google Assist).
-            -->
+            &ndash;&gt;
             <intent-filter android:priority="-10">
                 <action android:name="android.intent.action.ASSIST" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            <!-- input/output: Nothing -->
-            <!-- API 3 -->
-            <!-- "Voice search" on CM10.2, which can be mapped to various buttons -->
+            &lt;!&ndash; input/output: Nothing &ndash;&gt;
+            &lt;!&ndash; API 3 &ndash;&gt;
+            &lt;!&ndash; "Voice search" on CM10.2, which can be mapped to various buttons &ndash;&gt;
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH_LONG_PRESS" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
 
-            <!-- input/output: Nothing -->
+            &lt;!&ndash; input/output: Nothing &ndash;&gt;
             <intent-filter>
                 <action android:name="android.speech.action.VOICE_SEARCH_HANDS_FREE" />
 
@@ -183,7 +183,7 @@ Also, failed to set the launchMode from the resource, INSTALL_PARSE_FAILED_UNEXP
                 <action android:name="android.provider.MediaStore.RECORD_SOUND" />
 
                 <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+            </intent-filter>-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
