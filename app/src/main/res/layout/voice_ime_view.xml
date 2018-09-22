@@ -41,7 +41,6 @@
             android:layout_toStartOf="@+id/bImeAction"
             android:ellipsize="start"
             android:gravity="center"
-            android:singleLine="true"
             android:textColor="@color/grey300"
             android:textSize="@dimen/textSize2"
             android:visibility="visible"
@@ -69,7 +68,7 @@
 
         <ee.ioc.phon.android.speechutils.view.MicButton
             android:id="@+id/bImeStartStop"
-            android:layout_width="@dimen/layoutHeightButtonMicrophone"
+            android:layout_width="228dp"
             android:layout_height="@dimen/layoutHeightButtonMicrophone"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
@@ -106,6 +105,7 @@
     </RelativeLayout>
 
     <TextView
+        android:visibility="gone"
         android:id="@+id/tvInstruction"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -117,6 +117,7 @@
         tools:text="@string/buttonImeSpeak" />
 
     <Button
+        android:visibility="gone"
         android:id="@+id/tvComboSelector"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
