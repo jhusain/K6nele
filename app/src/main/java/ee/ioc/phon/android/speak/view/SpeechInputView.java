@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.content.res.TypedArray;
 import android.graphics.Paint;
 import android.os.Bundle;
+import android.os.Handler;
 import android.preference.PreferenceManager;
 import android.speech.RecognitionListener;
 import android.speech.SpeechRecognizer;
@@ -763,6 +764,7 @@ public class SpeechInputView extends LinearLayout {
                 mListener.onFinalResult(results, bundle);
             }
             setGuiInitState(0);
+            start();
         }
 
         @Override
